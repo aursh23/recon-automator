@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recon Results - {{ target }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1e1e2f; color: #eee; padding: 30px; }
+        h2 { color: #4e8cff; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #444; padding: 10px; text-align: left; word-break: break-word; }
+        th { background: #2a2a3d; width: 25%; }
+        tr:nth-child(even) { background: #26263a; }
+        a.button { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #4e8cff; color: white; text-decoration: none; border-radius: 5px; }
+        a.button:hover { background: #3a6fd6; }
+    </style>
+</head>
+<body>
+    <h2>Recon Report: {{ target }}</h2>
+    <a class="button" href="/download/{{ filename }}">Download .txt Report</a>
+    <a class="button" href="/" style="background:#555;">New Scan</a>
+    <table>
+        {% for key, value in data.items() %}
+        <tr>
+            <th>{{ key }}</th>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
