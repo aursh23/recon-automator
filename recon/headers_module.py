@@ -50,7 +50,7 @@ def get_http_headers(domain):
     return result
 
 
-# Quick test when running this file directly
+
 if __name__ == "__main__":
     domain = input("Enter domain: ")
     data = get_http_headers(domain)
