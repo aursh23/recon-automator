@@ -16,7 +16,7 @@ def get_whois(domain):
 
         result["Registrar"] = w.registrar or "N/A"
 
-        # creation_date and expiration_date can be a list or single value
+        
         created = w.creation_date
         if isinstance(created, list):
             created = created[0]
@@ -41,7 +41,6 @@ def get_whois(domain):
     return result
 
 
-# Quick test when running this file directly
 if __name__ == "__main__":
     domain = input("Enter domain: ")
     data = get_whois(domain)
