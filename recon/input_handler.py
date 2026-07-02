@@ -51,7 +51,7 @@ def resolve_target(identified):
     return result
 
 
-# Quick test when running this file directly
+
 if __name__ == "__main__":
     user_input = input("Enter URL or IP: ")
     identified = identify_target(user_input)
