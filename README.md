@@ -26,8 +26,6 @@ python3 app.py
 ```
 Then open `http://localhost:5000` in your browser.
 
-Screenshots
-*(add screenshots here)*
 
 Disclaimer
 This tool is for **educational purposes and authorized security testing only**. Do not scan or gather information on any system without explicit permission from its owner. Unauthorized reconnaissance may violate computer misuse laws.
