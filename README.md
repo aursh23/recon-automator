@@ -17,7 +17,7 @@ Python · Flask · dnspython · python-whois · requests · tabulate
 
 Setup
 ```bash
-git clone https://github.com/YOUR_USERNAME/recon-automator.git
+git clone https://github.com/aursh23/recon-automator.git
 cd recon-automator
 python3 -m venv venv
 source venv/bin/activate
