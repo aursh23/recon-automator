@@ -25,7 +25,7 @@ def write_report(data, target_name):
     return filename
 
 
-# Quick test when running this file directly
+
 if __name__ == "__main__":
     from recon.aggregator import run_recon
 
