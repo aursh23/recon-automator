@@ -34,7 +34,7 @@ def get_subdomains(domain):
     return result
 
 
-# Quick test when running this file directly
+
 if __name__ == "__main__":
     domain = input("Enter domain: ")
     data = get_subdomains(domain)
