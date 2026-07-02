@@ -38,7 +38,7 @@ def get_ssl_info(domain, port=443):
     return result
 
 
-# Quick test when running this file directly
+
 if __name__ == "__main__":
     domain = input("Enter domain: ")
     data = get_ssl_info(domain)
