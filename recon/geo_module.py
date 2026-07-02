@@ -39,7 +39,7 @@ def get_geo_info(ip):
     return result
 
 
-# Quick test when running this file directly
+
 if __name__ == "__main__":
     ip = input("Enter IP address: ")
     data = get_geo_info(ip)
