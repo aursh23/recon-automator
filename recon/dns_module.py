@@ -41,7 +41,7 @@ def get_dns_records(domain):
     return result
 
 
-# Quick test when running this file directly
+
 if __name__ == "__main__":
     domain = input("Enter domain: ")
     data = get_dns_records(domain)
