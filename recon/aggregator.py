@@ -23,7 +23,7 @@ def run_recon(raw_input):
     domain = resolved["domain"]
     ip = resolved["ip"]
 
-    # WHOIS + DNS only work on domains
+    
     if domain:
         report.update(get_whois(domain))
         report.update(get_dns_records(domain))
@@ -33,14 +33,14 @@ def run_recon(raw_input):
     else:
         report["Note"] = "WHOIS/DNS/HTTP/SSL/Subdomains skipped (raw IP input, no domain)"
 
-    # Geo works on IP regardless
+   
     if ip and ip != "Could not resolve":
         report.update(get_geo_info(ip))
 
     return report
 
 
-# Quick test when running this file directly
+
 if __name__ == "__main__":
     user_input = input("Enter URL or IP: ")
     print("\nRunning recon... this may take 15-30 seconds due to WHOIS/SSL/subdomain lookups.\n")
